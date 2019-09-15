@@ -19,3 +19,14 @@ steps:
     publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
     tasks: 'assembleDebug'
+    sonarQubeGradlePluginVersion: '2.6.1'
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your commands here
+      
+      echo 'Hello world'
+      uname -a
+      pwd
+      ls -ltr
